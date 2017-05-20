@@ -38,8 +38,8 @@ $(inputsub).on('input',function(){
 	counter.innerHTML = curchar + " / " + subjmax + " characters" //(charsused) + " characters left"
 	}
 
-	});
+	})
 $(inputsub).trigger("input");
-};
+}
 }
 	)}}

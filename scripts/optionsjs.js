@@ -1,7 +1,7 @@
 function saveOptions(e){
 	e.preventDefault();
-	browser.storage.local.set({hidefr_n: document.querySelector("#set1").checked, hidemsg_n: document.querySelector("#set2").checked, countershow: document.querySelector("#set3").checked})
-};
+	browser.storage.local.set({hidefr_n: document.querySelector("#set1").checked, hidemsg_n: document.querySelector("#set2").checked, countershow: document.querySelector("#set3").checked});
+}
 
 window.addEventListener("DOMContentLoaded", restoreOptions);
 	
