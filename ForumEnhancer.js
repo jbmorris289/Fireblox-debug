@@ -42,4 +42,4 @@ $(inputsub).on('input',function(){
 $(inputsub).trigger("input");
 }
 }
-	)}}
+	}})

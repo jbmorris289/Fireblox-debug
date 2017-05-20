@@ -92,6 +92,10 @@ input:focus + .slider {
 input:checked + .slider:before {
 	transform: translateX(26px);
 }
+
+input:disabled + .slider {
+	opacity: 0.5;
+}
 /*#snackbar {
 	visibility: hidden;
 	min-width: 250px;

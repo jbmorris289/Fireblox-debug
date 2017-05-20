@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
-	"name": "FireBlox - ROBLOX Enhancer",
-	"version": "v0.0.1a",
+	"name": "FireBlox - ROBLOX Enhancer Alpha",
+	"version": "0.0.1",
 	
 	"description": "An extension which enhances the ROBLOX website with some modifications, and Tweaks.",
 	"browser_action":{
