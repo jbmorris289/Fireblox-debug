@@ -1,0 +1,40 @@
+{
+	"manifest_version": 2,
+	"name": "FireBlox - ROBLOX Enhancer",
+	"version": "v0.0.1a",
+	
+	"description": "An extension which enhances the ROBLOX website with some modifications, and Tweaks.",
+	"browser_action":{
+		"browser_style":true,
+		"default_popup": "popup/def.html",
+		"default_icon": {
+			"32":"FireBlox_icon_4.gif"
+		}
+	},
+	
+	"permissions": [
+	"activeTab",
+	"storage"
+	],
+	
+	"options_ui":{
+	"page": "optionspage.html"
+	},
+	
+	"background": {
+		"scripts":["scripts/bgscript.js"]
+	},
+	
+	"content_scripts": [
+	{
+		"matches": ["*://www.roblox.com/*"],
+		"js": ["alertify.min.js","jquery-3.1.1.min.js","EnhanceScript_main.js"],
+		"css":["css/alertify/alertify.min.css","css/alertify/themes/default.min.css"]
+		},
+		{
+		"matches":["*://forum.roblox.com/Forum/*"],
+		"js":["alertify.min.js","jquery-3.1.1.min.js","EnhanceScript_main.js","ForumEnhancer.js"]
+		}
+	]
+}
+	
